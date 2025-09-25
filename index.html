@@ -1,0 +1,189 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Kishan S.B — Portfolio</title>
+  <meta name="description" content="Portfolio of Kishan S.B — Aspiring Data Scientist & Software Developer" />
+  <style>
+    :root{--bg:#0f1724;--card:#0b1220;--accent:#06b6d4;--muted:#94a3b8;--glass:rgba(255,255,255,0.04)}
+    *{box-sizing:border-box}
+    body{margin:0;font-family:Inter,Segoe UI,Roboto,Arial,sans-serif;background:linear-gradient(180deg,#071027 0%, #071022 100%);color:#e6eef6;line-height:1.5}
+    .container{max-width:1100px;margin:36px auto;padding:24px}
+    header{display:flex;justify-content:space-between;align-items:center;gap:16px}
+    .brand{display:flex;align-items:center;gap:12px}
+    .profile-pic{width:56px;height:56px;border-radius:50%;object-fit:cover;transition:transform .3s;box-shadow:0 0 8px rgba(0,0,0,0.4)}
+    .profile-pic:hover{transform:scale(1.1)}
+    nav a{color:var(--muted);text-decoration:none;margin-left:12px;font-weight:600;transition:color .3s}
+    nav a:hover{color:var(--accent)}
+    .hero{display:grid;grid-template-columns:1fr 360px;gap:28px;margin-top:28px;align-items:start}
+    .card{background:linear-gradient(180deg, rgba(255,255,255,0.02), rgba(255,255,255,0.01));border-radius:14px;padding:20px;box-shadow:0 6px 20px rgba(2,6,23,0.6);border:1px solid rgba(255,255,255,0.04);transition:transform .3s, box-shadow .3s}
+    .card:hover{transform:translateY(-4px);box-shadow:0 8px 24px rgba(2,6,23,0.8)}
+    h1{font-size:28px;margin:0 0 8px}
+    p.lead{color:var(--muted);margin:0 0 16px}
+    .cta{display:flex;gap:10px;margin-top:14px}
+    .btn{padding:10px 14px;border-radius:10px;border:0;cursor:pointer;font-weight:700;transition:background .3s, transform .2s}
+    .btn:hover{transform:translateY(-2px)}
+    .btn-primary{background:var(--accent);color:#021025}
+    .btn-primary:hover{background:#0891b2}
+    .btn-outline{background:transparent;border:1px solid rgba(255,255,255,0.06);color:var(--muted)}
+    .btn-outline:hover{border-color:var(--accent);color:var(--accent)}
+    .contact-card{display:flex;flex-direction:column;gap:10px}
+    .meta{display:flex;flex-direction:column;gap:6px}
+    .meta div{color:var(--muted);font-weight:600}
+    .skills{display:flex;flex-wrap:wrap;gap:8px;margin-top:12px}
+    .skill{padding:6px 10px;background:var(--glass);border-radius:999px;color:var(--muted);font-weight:700;transition:background .3s, color .3s}
+    .skill:hover{background:var(--accent);color:#021025}
+    .section{margin-top:20px}
+    .grid-2{display:grid;grid-template-columns:1fr 1fr;gap:16px}
+    .project{padding:12px;border-radius:10px;background:linear-gradient(180deg, rgba(10,14,20,0.6), rgba(10,14,20,0.45));border:1px solid rgba(255,255,255,0.03);transition:transform .3s, border-color .3s}
+    .project:hover{transform:translateY(-3px);border-color:var(--accent)}
+    .muted{color:var(--muted)}
+    footer{margin-top:28px;text-align:center;color:var(--muted);font-size:14px}
+    a.inline{color:var(--accent);text-decoration:none;font-weight:700}
+    a.inline:hover{text-decoration:underline}
+    @media(max-width:900px){.hero{grid-template-columns:1fr} .contact-card{flex-direction:row;justify-content:space-between} .grid-2{grid-template-columns:1fr}}
+  </style>
+</head>
+<body>
+  <div class="container">
+    <header>
+      <div class="brand">
+        <img src="profile.jpg" alt="Profile Picture" class="profile-pic" />
+        <div>
+          <div style="font-weight:800">Kishan S.B</div>
+          <div class="muted" style="font-size:13px">Aspiring Data Scientist & Software Developer — Bangalore, India</div>
+        </div>
+      </div>
+      <nav>
+        <a href="#projects">Projects</a>
+        <a href="#skills">Skills</a>
+        <a href="#experience">Experience</a>
+        <a href="#contact">Contact</a>
+      </nav>
+    </header>
+
+    <main class="hero">
+      <div class="card">
+        <h1>Hi — I’m Kishan.</h1>
+        <p class="lead">I build data-driven web tools and machine learning projects. I have hands-on experience with Python, SQL, Power BI, Tableau and web development. I’m currently open to internships and junior roles in data science and software development.</p>
+
+        <div class="cta">
+          <a class="btn btn-primary" href="mailto:kishansb6666@gmail.com">Email Me</a>
+          <a class="btn btn-outline" href="https://github.com/Kishansb" target="_blank" rel="noopener">View GitHub</a>
+          <a class="btn btn-outline" href="#contact">Contact</a>
+        </div>
+
+        <div class="section">
+          <h3 style="margin:0 0 8px">Professional Summary</h3>
+          <p class="muted">Aspiring Data Scientist with real‑world projects: weather forecasting app, student study center management system, iris recognition tool, and VAPT for web apps. Comfortable building full-stack interfaces and applying ML concepts.</p>
+        </div>
+
+        <div id="skills" class="section">
+          <h3 style="margin:0 0 8px">Technical Skills</h3>
+          <div class="skills">
+            <div class="skill">Python</div>
+            <div class="skill">SQL (MySQL, PostgreSQL)</div>
+            <div class="skill">Power BI</div>
+            <div class="skill">Tableau</div>
+            <div class="skill">HTML/CSS/JS</div>
+            <div class="skill">Machine Learning</div>
+            <div class="skill">Data Cleaning & EDA</div>
+          </div>
+        </div>
+
+        <div class="section">
+          <h3 style="margin:0 0 8px">Education</h3>
+          <div class="muted">B.E. Computer Science Engineering — Navkis College of Engineering, Hassan (2021–2025) | CGPA: 8.1/10</div>
+        </div>
+
+      </div>
+
+      <aside class="card contact-card">
+        <div>
+          <h3 style="margin:0 0 6px">Contact</h3>
+          <div class="meta">
+            <div>📞 +91-8792027654</div>
+            <div>✉️ <a class="inline" href="mailto:kishansb6666@gmail.com">kishansb6666@gmail.com</a></div>
+            <div>💼 <a class="inline" href="https://www.linkedin.com/in/kishan-kishan-6995b1310" target="_blank">LinkedIn</a></div>
+            <div>🐙 <a class="inline" href="https://github.com/Kishansb" target="_blank">GitHub</a></div>
+            <div class="muted">Location: Bangalore, India</div>
+          </div>
+        </div>
+
+        <div style="margin-top:auto">
+          <h4 style="margin:0 0 8px"></h4>
+          <a class="btn btn-outline" href="KISHAN.SB%20(1).pdf" download>Download Resume</a>
+        </div>
+      </aside>
+    </main>
+
+    <section id="projects" class="section card">
+      <h2 style="margin-top:0">Projects</h2>
+      <div class="grid-2">
+        <div class="project">
+          <h4>Students Study Center Management System</h4>
+          <p class="muted">Centralized platform for managing student data, course materials, attendance and admin operations for scheduling and resource allocation.</p>
+          <p style="margin:6px 0 0"><strong>Highlights:</strong> Admin dashboard, CRUD operations, role-based views.</p>
+          <p style="margin:8px 0 0"><a class="inline" href="https://github.com/Kishansb" target="_blank">View on GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h4>Weather Forecasting System</h4>
+          <p class="muted">Real-time weather app using public APIs to fetch live data and present temperature, humidity, wind speed and short-term forecast with a user-friendly UI.</p>
+          <p style="margin:6px 0 0"><strong>Tech:</strong> APIs, JavaScript, Python (backend)</p>
+          <p style="margin:8px 0 0"><a class="inline" href="https://github.com/Kishansb" target="_blank">View on GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h4>Iris Recognition Tool</h4>
+          <p class="muted">A computer vision project to detect and recognize iris patterns using image processing techniques and ML models.</p>
+          <p style="margin:6px 0 0"><strong>Use-case:</strong> Biometric recognition and authentication demo.</p>
+          <p style="margin:8px 0 0"><a class="inline" href="https://github.com/Kishansb" target="_blank">View on GitHub</a></p>
+        </div>
+
+        <div class="project">
+          <h4>Vulnerability Assessment & Penetration Testing (VAPT)</h4>
+          <p class="muted">Security assessment on web applications identifying common vulnerabilities: XSS, SQL Injection and recommended remediation steps.</p>
+          <p style="margin:6px 0 0"><strong>Outcome:</strong> Reported findings and fixes to improve security posture.</p>
+          <p style="margin:8px 0 0"><a class="inline" href="https://github.com/Kishansb" target="_blank">View Notes</a></p>
+        </div>
+
+      </div>
+    </section>
+
+    <section id="experience" class="section card">
+      <h2 style="margin-top:0">Experience & Certifications</h2>
+      <div class="muted">
+        <strong>Software Developer Intern</strong> — TechCiti Technologies (Sep 2024 – Dec 2024)
+        <ul>
+          <li>Built user interfaces with modern JS frameworks, HTML, and CSS improving UX and user satisfaction by ~31%.</li>
+          <li>Developed e-commerce features and assisted in backend integration.</li>
+        </ul>
+        <p><strong>Certifications:</strong> C/C++ Programming (Ideal Computer Education), Soft Skills & Microsoft Office (10 Seconds), Ethical Hacking & Cybersecurity Workshop (NICC)</p>
+      </div>
+    </section>
+
+    <section id="contact" class="section card">
+      <h2 style="margin-top:0">Contact</h2>
+      <p class="muted">Want to work together or see code? Send me a message.</p>
+      <form onsubmit="event.preventDefault(); window.location='mailto:kishansb6666@gmail.com?subject='+encodeURIComponent(document.getElementById('sub').value)+'&body='+encodeURIComponent(document.getElementById('msg').value)">
+        <div style="display:flex;flex-direction:column;gap:10px;max-width:700px">
+          <input id="name" placeholder="Your name" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required>
+          <input id="sub" placeholder="Subject" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required>
+          <textarea id="msg" rows="6" placeholder="Message" style="padding:10px;border-radius:8px;border:1px solid rgba(255,255,255,0.04);background:transparent;color:inherit" required></textarea>
+          <div style="display:flex;gap:10px">
+            <button class="btn btn-primary" type="submit">Send Email</button>
+            <a class="btn btn-outline" href="https://github.com/Kishansb" target="_blank">See GitHub</a>
+          </div>
+        </div>
+      </form>
+    </section>
+
+    <footer>
+      Built with ❤️ — <a class="inline" href="https://github.com/Kishansb" target="_blank">Kishan S.B</a>
+    </footer>
+
+  </div>
+</body>
+</html>
